@@ -1,3 +1,38 @@
-html {
+/* COMMON */
+body {
   font-family: 'Nanum Gothic', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+header {
+  background-color: royalblue;
+}
+
+/*INNER*/
+.inner {
+  width: 1100px;
+  height: 120px;
+  background-color: orange;
+  margin: 0 auto;
+  position: relative;
+}
+
+header .logo {
+  height: 75px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
