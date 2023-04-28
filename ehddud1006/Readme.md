@@ -640,3 +640,6 @@ function random(min, max) {
   </li>
 </ul>
 ```
+
+### 사용한 깃 컨벤션 
+![img](./images/git_convention.png)
