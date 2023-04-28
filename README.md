@@ -4,9 +4,9 @@
 `누구나` 참여 가능한 HTML CSS JS 선택강의 완강 챌린지입니다.
 
 `강제성`이 필요하신 분! `함께` 으쌰으쌰 하실 분! 환영합니다.
-<br />
+<br /><br/>
 강의레포: https://github.com/ParkYoungWoong/starbucks-vanilla-app
-<br />
+<br /><br/>
 
 ## ✅ 완강까지 일정
 
