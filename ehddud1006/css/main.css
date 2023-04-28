@@ -12,6 +12,7 @@ a {
 }
 
 img {
+  /* img(인라인 요소) 하단에 Baseline 공백을 제거 */
   display: block;
 }
 
