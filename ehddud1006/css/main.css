@@ -796,21 +796,21 @@ header .badges .badge {
 }
 
 /*FOOTER*/
-/* footer {
+footer {
   background-color: #272727;
   border-top: 1px solid #333;
-} */
-/* footer .inner {
+}
+footer .inner {
   padding: 40px 0 60px 0;
-} */
-/* footer .menu {
+}
+footer .menu {
   display: flex;
   justify-content: center;
-} */
-/* footer .menu li {
+}
+footer .menu li {
   position: relative;
-} */
-/* footer .menu li::before {
+}
+footer .menu li::before {
   content: '';
   width: 3px;
   height: 3px;
@@ -820,53 +820,68 @@ header .badges .badge {
   bottom: 0;
   right: -1px;
   margin: auto;
-} */
-/* footer .menu li:last-child::before {
+}
+footer .menu li:last-child::before {
   display: none;
-} */
-/* footer .menu li a {
+}
+footer .menu li a {
   display: block;
   color: #ccc;
   font-size: 12px;
   font-weight: 700;
   padding: 15px;
-} */
-/* footer .menu li a.green {
+}
+footer .menu li a.green {
   color: #669900;
-} */
-/* footer .btn-group {
+}
+footer .btn-group {
   margin-top: 20px;
   display: flex;
   justify-content: center;
-} */
-/* footer .btn-group .btn {
+}
+footer .btn-group .btn {
   font-size: 12px;
   margin-right: 10px;
-} */
-/* footer .btn-group .btn:last-child {
+}
+footer .btn-group .btn:last-child {
   margin-right: 0;
-} */
-/* footer .info {
+}
+footer .info {
   margin-top: 30px;
   text-align: center;
-} */
-/* footer .info span {
+}
+footer .info span {
   margin-right: 20px;
   color: #999;
   font-size: 12px;
-} */
-/* footer .info span:last-child {
+}
+footer .info span:last-child {
   margin-right: 0;
-} */
-/* footer .copyright {
+}
+footer .copyright {
   color: #999;
   font-size: 12px;
   text-align: center;
   margin-top: 12px;
-} */
-/* footer .logo {
+}
+footer .logo {
   margin: 30px auto 0;
-} */
+}
 
 /*SCROLL TO TOP*/
-/* ㄴ */
+#to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9;
+  width: 42px;
+  height: 42px;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
