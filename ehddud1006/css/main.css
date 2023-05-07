@@ -754,17 +754,17 @@ header .badges .badge {
 }
 
 /*AWARDS*/
-/* .awards {
+.awards {
   background-color: #272727;
-} */
-/* .awards .inner {
+}
+.awards .inner {
   padding: 40px 0;
-} */
-/* .awards .swiper-container {
+}
+.awards .swiper-container {
   width: 100%;
   height: 40px;
-} */
-/* .awards .swiper-prev,
+}
+.awards .swiper-prev,
 .awards .swiper-next {
   width: 42px;
   height: 42px;
@@ -782,18 +782,18 @@ header .badges .badge {
   justify-content: center;
   align-items: center;
   transition: 0.4s;
-} */
-/* .awards .swiper-prev {
+}
+.awards .swiper-prev {
   left: -100px;
-} */
-/* .awards .swiper-next {
+}
+.awards .swiper-next {
   right: -100px;
-} */
-/* .awards .swiper-prev:hover,
+}
+.awards .swiper-prev:hover,
 .awards .swiper-next:hover {
   background-color: #fff;
   color: #333;
-} */
+}
 
 /*FOOTER*/
 /* footer {
