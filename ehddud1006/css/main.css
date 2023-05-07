@@ -665,51 +665,51 @@ header .badges .badge {
 }
 
 /*RESERVE STORE*/
-/* .reserve-store {
+.reserve-store {
   background-image: url('../images/reserve_store_bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-} */
-/* .reserve-store .inner {
+}
+.reserve-store .inner {
   height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
-} */
-/* .reserve-store .medal {
+}
+.reserve-store .medal {
   width: 334px;
   height: 334px;
   perspective: 600px;
-} */
-/* .reserve-store .medal .front,
+}
+.reserve-store .medal .front,
 .reserve-store .medal .back {
   width: inherit;
   height: inherit;
   position: absolute;
   transition: 1s;
   backface-visibility: hidden;
-} */
-/* .reserve-store .medal .front {
+}
+.reserve-store .medal .front {
   transform: rotateY(0deg);
-} */
-/* .reserve-store .medal:hover .front {
+}
+.reserve-store .medal:hover .front {
   transform: rotateY(180deg);
-} */
-/* .reserve-store .medal .back {
+}
+.reserve-store .medal .back {
   transform: rotateY(-180deg);
-} */
-/* .reserve-store .medal:hover .back {
+}
+.reserve-store .medal:hover .back {
   transform: rotateY(0deg);
-} */
-/* .reserve-store .medal .back .btn {
+}
+.reserve-store .medal .back .btn {
   position: absolute;
   top: 240px;
   left: 0;
   right: 0;
   margin: auto;
-} */
+}
 
 /*FIND STORE*/
 /* .find-store {
