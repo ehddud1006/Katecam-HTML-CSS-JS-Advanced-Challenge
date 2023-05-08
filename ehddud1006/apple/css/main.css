@@ -1,3 +1,18 @@
+html {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-font: #1d1d1d;
+  --color-font-darkgray: #6e6e6e;
+  --color-font-middlegray: #b7b7b7;
+  --color-font-lightgray: #f5f5f5;
+  --color-link: #0071e3;
+  --color-link-focus: #81b9f1;
+  --color-border: #d2d2d2;
+  --color-header: #3a3a3a;
+  --color-section: #f5f5f5;
+  --color-shadow: rgba(0, 0, 0, 0.4);
+}
+
 /*COMMON*/
 body {
   font-size: 16px;
@@ -29,7 +44,7 @@ header ul.menu li {
   display: flex;
 }
 
-header ul.menu li a {
+header ul.menu li > a {
   padding: 0 10px;
   display: flex;
   align-items: center;
@@ -42,9 +57,9 @@ header ul.menu li a:hover {
   opacity: 1;
 }
 
-header ul.menu li.apple-logo a,
-header ul.menu li.search-starter a,
-header ul.menu li.basket-starter a {
+header ul.menu li.apple-logo > a,
+header ul.menu li.search-starter > a,
+header ul.menu li.basket-starter > a {
   width: 14px;
   text-indent: -9999px;
   background-repeat: no-repeat;
@@ -52,16 +67,76 @@ header ul.menu li.basket-starter a {
 }
 
 header ul.menu li.apple-logo a {
-  background-image: url('../images/apple-logo.svg');
+  background-image: url('../images/header_apple.svg');
 }
 
-header ul.menu li.search-starter a {
+header ul.menu li.search-starter > a {
   background-image: url('../images/header_search.svg');
 }
-header ul.menu li.basket-starter a {
+header ul.menu li.basket-starter > a {
   background-image: url('../images/header_bag.svg');
 }
 
 header ul.menu li:hover a {
   opacity: 1;
+}
+
+header ul.menu li.basket-starter {
+  position: relative;
+}
+header ul.menu li.basket-starter > .basket {
+  position: absolute;
+  top: 46px;
+  right: -6px;
+
+  box-sizing: border-box;
+  width: 290px;
+  padding: 10px 20px;
+  border: 1px solid #d2d2d2;
+  border-radius: 10px;
+}
+
+header ul.menu li.basket-starter > .basket > .message {
+  padding: 30px 0;
+  font-size: 13px;
+  color: var(--color-font-darkgray);
+  text-align: center;
+}
+
+header .basket .arrow {
+  width: 20px;
+  height: 10px;
+  overflow: hidden;
+  position: absolute;
+  top: -10px;
+  right: 12px;
+}
+
+header .basket .arrow::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-white);
+  transform: rotate(45deg);
+  transform-origin: 0 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+header .basket ul li {
+  border-top: 1px solid var(--color-border);
+}
+
+header ul.menu li.basket-starter > .basket > ul > li > a {
+  display: block;
+  padding: 14px;
+  font-size: 13px;
+  color: var(--color-link);
+}
+
+header ul.menu li.basket-starter > .basket > ul > li > a:hover {
+  text-decoration: underline;
+  color: var(--color-link);
 }
