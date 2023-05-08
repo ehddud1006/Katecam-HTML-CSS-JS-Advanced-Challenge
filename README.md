@@ -80,11 +80,11 @@
 
 ## ✅ 참여자와 진행도
 ### 🎉 완강 달성 🎉
-<table><tr>   <td align="center"><a href="https://github.com/ehddud1006"><img src="https://avatars.githubusercontent.com/u/62373865?v=4" width="100px;" alt=""/>         <br /><sub><b>ehddud1006/김동영</b><br><img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100"/></sub></a><br /></td></tr>
-</table><br />
+<br />
 
 ### 🔥 완강 도전 🔥
-<table><tr>         <td align="center"><a href="https://github.com/ehddud1006"><img src="https://avatars.githubusercontent.com/u/62373865?v=4" width="100px;" alt=""/>         <br /><sub><b>ehddud1006/김동영</b><br><img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/0"/></sub></a><br /></td>
+<table><tr>         <td align="center"><a href="https://github.com/ehddud1006"><img src="https://avatars.githubusercontent.com/u/62373865?v=4" width="100px;" alt=""/>         <br /><sub><b>ehddud1006/김동영</b><br><img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/21"/></sub></a><br /></td>
+<td align="center"><a href="https://github.com/mun-jihye"><img src="https://avatars.githubusercontent.com/u/53855302?v=4?s=100" width="100px;" alt=""/>         <br /><sub><b>mun-jihye/문지혜</b><br><img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/16"/></sub></a><br /></td>
 </tr></table><br />
 
 ### 💀 완강 포기 💀
