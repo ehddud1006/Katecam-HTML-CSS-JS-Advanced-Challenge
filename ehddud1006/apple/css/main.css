@@ -25,84 +25,93 @@ a {
   text-decoration: none;
 }
 
-header {
-  background-color: #3a3a3a;
+/* Inner */
+.inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
 }
 
+/* Header */
+header {
+  --header-height: 44px;
+  background-color: var(--color-header);
+  position: relative;
+  z-index: 9;
+  transition: 0.4s;
+}
 header .inner {
   max-width: 1020px;
-  margin: 0 auto;
+  height: var(--header-height);
+}
+header .mobile-layout {
+  display: none;
 }
 
+/* Header / Menu */
 header ul.menu {
   display: flex;
   justify-content: space-between;
-  height: 44px;
+  height: var(--header-height);
 }
-
-header ul.menu li {
+header ul.menu > li {
   display: flex;
+  position: relative;
+  cursor: pointer;
+  transition: 0.4s;
 }
-
-header ul.menu li > a {
-  padding: 0 10px;
+header ul.menu > li.menu-starter {
+  display: none;
+}
+header ul.menu > li > a {
   display: flex;
   align-items: center;
+  padding: 0 10px;
   font-size: 11px;
-  color: #f5f5f5;
+  color: var(--color-font-lightgray);
   opacity: 0.8;
 }
-
-header ul.menu li a:hover {
-  opacity: 1;
-}
-
-header ul.menu li.apple-logo > a,
-header ul.menu li.search-starter > a,
-header ul.menu li.basket-starter > a {
+header ul.menu > li.apple-logo > a,
+header ul.menu > li.search-starter > a,
+header ul.menu > li.basket-starter > a {
   width: 14px;
   text-indent: -9999px;
   background-repeat: no-repeat;
   background-position: center 13px;
 }
-
-header ul.menu li.apple-logo a {
+header ul.menu > li.apple-logo > a {
   background-image: url('../images/header_apple.svg');
 }
-
-header ul.menu li.search-starter > a {
+header ul.menu > li.search-starter > a {
   background-image: url('../images/header_search.svg');
 }
-header ul.menu li.basket-starter > a {
+header ul.menu > li.basket-starter > a {
   background-image: url('../images/header_bag.svg');
 }
-
-header ul.menu li:hover a {
+header ul.menu > li:hover > a {
   opacity: 1;
 }
 
-header ul.menu li.basket-starter {
-  position: relative;
-}
-header ul.menu li.basket-starter > .basket {
-  position: absolute;
-  top: 46px;
-  right: -6px;
-
-  box-sizing: border-box;
+/* Header / Menu / Basket */
+header .basket {
   width: 290px;
   padding: 10px 20px;
-  border: 1px solid #d2d2d2;
+  border: 1px solid var(--color-border);
   border-radius: 10px;
+  box-sizing: border-box;
+  background-color: var(--color-white);
+  position: absolute;
+  top: calc(100% + 4px);
+  right: -6px;
+  transition: 0.4s;
+  /* visibility: hidden; */
+  /* opacity: 0; */
 }
-
-header ul.menu li.basket-starter > .basket > .message {
-  padding: 30px 0;
-  font-size: 13px;
-  color: var(--color-font-darkgray);
-  text-align: center;
+header .basket.show {
+  visibility: visible;
+  opacity: 1;
 }
-
 header .basket .arrow {
   width: 20px;
   height: 10px;
@@ -111,7 +120,6 @@ header .basket .arrow {
   top: -10px;
   right: 12px;
 }
-
 header .basket .arrow::before {
   content: '';
   width: 12px;
@@ -124,19 +132,24 @@ header .basket .arrow::before {
   top: 0;
   left: 50%;
 }
-
+header .basket .message {
+  padding: 30px 0;
+  font-size: 13px;
+  color: var(--color-font-darkgray);
+  text-align: center;
+}
+header .basket ul {
+  margin-top: 10px;
+}
 header .basket ul li {
   border-top: 1px solid var(--color-border);
 }
-
-header ul.menu li.basket-starter > .basket > ul > li > a {
+header .basket ul li a {
   display: block;
   padding: 14px;
   font-size: 13px;
   color: var(--color-link);
 }
-
-header ul.menu li.basket-starter > .basket > ul > li > a:hover {
+header .basket ul li a:hover {
   text-decoration: underline;
-  color: var(--color-link);
 }
