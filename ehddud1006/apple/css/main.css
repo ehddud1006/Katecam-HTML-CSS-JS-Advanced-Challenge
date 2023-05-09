@@ -105,12 +105,12 @@ header .basket {
   top: calc(100% + 4px);
   right: -6px;
   transition: 0.4s;
-  visibility: hidden;
   opacity: 0;
+  visibility: hidden;
 }
 header .basket.show {
-  visibility: visible;
   opacity: 1;
+  visibility: visible;
 }
 header .basket .arrow {
   width: 20px;
