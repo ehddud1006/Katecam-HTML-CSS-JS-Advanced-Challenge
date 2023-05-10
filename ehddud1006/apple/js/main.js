@@ -26,3 +26,17 @@ function showBasket() {
 function hideBasket() {
   basketEl.classList.remove('show');
 }
+
+const searchEl = document.querySelector('.search-starter');
+const headerEl = document.querySelector('header');
+const searchCloser = document.querySelector('.search-closer');
+const htmlEl = document.querySelector('html');
+searchEl.addEventListener('click', () => {
+  headerEl.classList.add('searching');
+  htmlEl.classList.add('fixed');
+});
+
+searchCloser.addEventListener('click', () => {
+  headerEl.classList.remove('searching');
+  htmlEl.classList.remove('fixed');
+});
