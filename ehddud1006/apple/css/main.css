@@ -681,3 +681,34 @@ nav .menu li:hover a {
 nav .menu li.active:hover a {
   color: var(--color-font);
 }
+
+/* Main wrapper */
+main {
+  overflow-x: hidden;
+}
+
+/* Hero */
+.hero {
+}
+.hero .inner {
+}
+.hero h1 {
+}
+.hero .figures {
+}
+.hero figure {
+}
+.hero figcaption .caption-camera {
+}
+.hero figcaption .caption-chip {
+}
+.hero figcaption .caption-storage {
+}
+.hero h2 {
+}
+.hero p.pricing {
+}
+.hero p.description {
+}
+.hero .links {
+}
