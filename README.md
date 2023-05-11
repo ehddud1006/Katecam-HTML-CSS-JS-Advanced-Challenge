@@ -7,6 +7,10 @@
 <br /><br/>
 강의레포: https://github.com/ParkYoungWoong/starbucks-vanilla-app
 <br /><br/>
+강의레포: https://github.com/ParkYoungWoong/apple-ipad-app
+<br /><br/>
+강의레포: https://github.com/ParkYoungWoong/vanillajs-movie-app/tree/js-only
+<br /><br/>
 
 ## ✅ 완강까지 일정
 
