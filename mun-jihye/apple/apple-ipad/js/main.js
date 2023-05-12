@@ -38,6 +38,7 @@ const searchWrapEl = headerEl.querySelector('.search-wrap')
 const searchStarterEl = headerEl.querySelector('.search-starter')
 const searchCloserEl = searchWrapEl.querySelector('.search-closer')
 const searchShadowEl = searchWrapEl.querySelector('.shadow')
+const searchInputEl = searchWrapEl.querySelector('input')
 const searchDelayEls = [...searchWrapEl.querySelectorAll('li')]
 
 searchStarterEl.addEventListener('click', showSearch)
@@ -55,6 +56,9 @@ function showSearch(){
     searchDelayEls.forEach(function(el,index){
         el.style.transitionDelay = index * .4 / searchDelayEls.length + 's'
     })
+    setTimeout(function(){
+        searchInputEl.focus()
+    }, 600)
 }
 function hideSearch(){
     headerEl.classList.remove('searching')
@@ -66,4 +70,6 @@ function hideSearch(){
         el.style.transitionDelay = index * .4 / searchDelayEls.length + 's'
     })
     searchDelayEls.reverse()
+    // 검색바가 사라질 떄 이전 내용 초기화
+    searchInputEl.value = ''
 }
