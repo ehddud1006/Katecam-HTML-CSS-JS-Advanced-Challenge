@@ -30,8 +30,8 @@ a {
 }
 img {
   display: block;
-  user-select: none;
   -webkit-user-drag: none;
+  user-select: none;
 }
 p {
   line-height: 1.6;
