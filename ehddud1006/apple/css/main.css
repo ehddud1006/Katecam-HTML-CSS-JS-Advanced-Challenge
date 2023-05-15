@@ -2000,7 +2000,7 @@ main {
 } */
 
 /* Privacy */
-/* .privacy {
+.privacy {
   margin-top: 238px;
 }
 .privacy h1 {
@@ -2032,7 +2032,7 @@ main {
   height: 31px;
   background-image: url('../images/privacy_caption_touch_id.png');
   transform: translate(533px, 485px);
-} */
+}
 /* 
 @media (max-width: 1000px) {
   .privacy {
