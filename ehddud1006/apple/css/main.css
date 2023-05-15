@@ -291,7 +291,7 @@ a.link::after {
 } */
 
 /* WhiteBox */
-/* .whitebox {
+.whitebox {
   max-width: 1386px;
   margin: 0 auto;
   padding: 100px 30px;
@@ -317,7 +317,7 @@ a.link::after {
 .whitebox a.link {
   display: block;
   margin-top: 26px;
-} */
+}
 
 /* @media (max-width: 1000px) {
   .whitebox {
@@ -2076,7 +2076,7 @@ main {
 } */
 
 /* Accessibility */
-/* .accessibility {
+.accessibility {
   margin-top: 266px;
   margin-bottom: 170px;
 }
@@ -2090,7 +2090,7 @@ main {
 }
 .accessibility figure {
   transform: translate(470px, -620px);
-} */
+}
 /* 
 @media (max-width: 1000px) {
   .accessibility {
