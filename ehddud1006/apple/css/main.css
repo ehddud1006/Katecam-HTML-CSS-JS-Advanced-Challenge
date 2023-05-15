@@ -2132,7 +2132,7 @@ main {
 } */
 
 /* AR */
-/* .ar {
+.ar {
   padding: 20px 20px 0;
   background-color: var(--color-section);
 }
@@ -2146,7 +2146,7 @@ main {
   max-width: 410px;
   margin-top: 60px;
   margin-right: 90px;
-} */
+}
 
 /* @media (max-width: 1000px) {
   .ar .image {
@@ -2170,7 +2170,7 @@ main {
 } */
 
 /* Environment */
-/* .environment {
+.environment {
   padding: 20px 20px 0;
   background-color: var(--color-section);
   text-align: center;
@@ -2181,16 +2181,17 @@ main {
 }
 .environment h1 {
   color: #03a10e;
-} */
+}
+*/
 
 /* @media (max-width: 1000px) {
   .environment p br {
     display: none;
   }
-} */
+}
 
 /* Accessory Shop */
-/* .accessory-shop {
+.accessory-shop {
   background-color: var(--color-section);
   text-align: center;
 }
@@ -2204,7 +2205,7 @@ main {
 }
 .accessory-shop img {
   margin-top: 50px;
-} */
+}
 
 /* @media (max-width: 1000px) {
   .accessory-shop img {
@@ -2213,11 +2214,11 @@ main {
 } */
 
 /* Trade */
-/* .trade {
+.trade {
   padding: 20px 20px 0;
   background-color: var(--color-section);
   text-align: center;
-} */
+}
 
 /* @media (max-width: 1000px) {
   .trade p br {
@@ -2226,7 +2227,7 @@ main {
 } */
 
 /* Compare */
-/* .compare {
+.compare {
   padding: 20px 20px 0;
   background-color: var(--color-section);
   text-align: center;
@@ -2279,7 +2280,7 @@ main {
 }
 .compare .item a.link {
   font-size: 14px;
-} */
+}
 
 /* @media (max-width: 1000px) {
   .compare .items {
