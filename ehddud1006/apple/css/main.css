@@ -1802,7 +1802,7 @@ main {
 } */
 
 /* Apps */
-/* .apps {
+.apps {
   margin-top: 368px;
 }
 .apps h1 {
@@ -1867,7 +1867,7 @@ main {
   height: 26px;
   background-image: url('../images/apps_goodnotes_caption.png');
   transform: translate(24px, 690px);
-} */
+}
 /* 
 @media (max-width: 1000px) {
   .apps {
