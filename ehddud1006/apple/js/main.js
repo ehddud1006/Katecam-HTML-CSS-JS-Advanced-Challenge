@@ -157,25 +157,25 @@ const infoEls = document.querySelectorAll('.info');
 infoEls.forEach(el => io.observe(el));
 
 // // 비디오 재생!
-// const video = document.querySelector('.stage video');
-// const playBtn = document.querySelector('.stage .controller--play');
-// const pauseBtn = document.querySelector('.stage .controller--pause');
+const video = document.querySelector('.stage video');
+const playBtn = document.querySelector('.stage .controller--play');
+const pauseBtn = document.querySelector('.stage .controller--pause');
 
 // Google 자동 재생 정책 확인! - https://developer.chrome.com/blog/autoplay/#audiovideo-elements
 // video.play()
 //   .then(played)
 //   .catch(paused)
 
-// playBtn.addEventListener('click', () => {
-//   video.play();
-//   playBtn.classList.add('hide');
-//   pauseBtn.classList.remove('hide');
-// });
-// pauseBtn.addEventListener('click', () => {
-//   video.pause();
-//   playBtn.classList.remove('hide');
-//   pauseBtn.classList.add('hide');
-// });
+playBtn.addEventListener('click', () => {
+  video.play();
+  playBtn.classList.add('hide');
+  pauseBtn.classList.remove('hide');
+});
+pauseBtn.addEventListener('click', () => {
+  video.pause();
+  playBtn.classList.remove('hide');
+  pauseBtn.classList.add('hide');
+});
 
 // // '당신에게 맞는 iPad는?' 랜더링!
 // const itemsEl = document.querySelector('section.compare .items');
