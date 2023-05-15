@@ -1475,11 +1475,11 @@ main {
 } */
 
 /* Wireless */
-/* .wireless {
+.wireless {
   margin-top: 202px;
-} */
+}
 /* Wireless / Facetime */
-/* .wireless .facetime h1 {
+.wireless .facetime h1 {
   width: 730px;
   height: 330px;
   background-image: url('../images/wireless_headline.png');
@@ -1496,9 +1496,9 @@ main {
   height: 46px;
   background-image: url('../images/wireless_facetime_caption.png');
   transform: translate(843px, -49px);
-} */
+}
 /* Wireless / Files */
-/* .wireless .files figure {
+.wireless .files figure {
   transform: translate(34px, -34px);
 }
 .wireless .files figcaption {
@@ -1506,7 +1506,7 @@ main {
   height: 46px;
   background-image: url('../images/wireless_files_caption.png');
   transform: translate(96px, 639px);
-} */
+}
 
 /* @media (max-width: 1000px) {
   .wireless {
