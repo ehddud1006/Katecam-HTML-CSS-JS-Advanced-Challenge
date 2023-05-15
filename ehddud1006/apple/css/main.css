@@ -1573,7 +1573,7 @@ main {
 } */
 
 /* Acssessories */
-/* .accessories {
+.accessories {
   margin-top: 195px;
 }
 .accessories h1 {
@@ -1605,7 +1605,7 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-} */
+}
 
 /* @media (max-width: 1000px) {
   .accessories {
