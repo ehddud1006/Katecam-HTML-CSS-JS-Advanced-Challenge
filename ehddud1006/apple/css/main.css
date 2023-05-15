@@ -897,7 +897,7 @@ nav .menu li.active:hover a {
 
 /* Main wrapper */
 main {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 /* Hero */
@@ -2311,11 +2311,11 @@ main {
 } */
 
 /* Footer */
-/* footer {
+footer {
   background-color: var(--color-section);
-} */
+}
 /* Footer / Buy Info */
-/* footer .buy-info {
+footer .buy-info {
   padding: 76px 0;
   display: flex;
   justify-content: space-around;
@@ -2338,9 +2338,9 @@ footer .buy-info p {
 }
 footer .buy-info a.link {
   font-size: 14px;
-} */
+}
 /* Footer / Warning */
-/* footer .warning {
+footer .warning {
   padding: 18px 0 10px;
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
@@ -2354,9 +2354,9 @@ footer .warning li {
   font-size: 11px;
   line-height: 1.5;
   color: var(--color-font-darkgray);
-} */
+}
 /* Footer / Breadcrumbs */
-/* footer .breadcrumbs {
+footer .breadcrumbs {
   display: flex;
   align-items: center;
   gap: 30px;
@@ -2388,9 +2388,9 @@ footer .breadcrumbs a::after {
 }
 footer .breadcrumbs a:last-child:after {
   display: none;
-} */
+}
 /* Footer / Navigations */
-/* footer .navigations {
+footer .navigations {
   margin-bottom: 40px;
   height: 344px;
   display: flex;
@@ -2454,7 +2454,7 @@ footer .legal ul li::after {
   content: '|';
   position: absolute;
   right: -11px;
-  글자가 아닌 라인 색상을 의미!
+  /* 글자가 아닌 라인 색상을 의미! */
   color: var(--color-border);
 }
 footer .legal ul li:last-child::after {
@@ -2462,7 +2462,7 @@ footer .legal ul li:last-child::after {
 }
 footer .legal ul li:hover a {
   text-decoration: underline;
-} */
+}
 
 /* @media (max-width: 1000px) {
   footer .inner {
