@@ -98,24 +98,24 @@ menuStarterEl.addEventListener('click', () => {
 });
 
 // // 헤더 검색! [모바일]
-// const searchTextFieldEl = document.querySelector('header .textfield');
-// const searchCancelEl = document.querySelector('header .search-canceler');
-// searchTextFieldEl.addEventListener('click', () => {
-//   headerEl.classList.add('searching--mobile');
-//   searchInputEl.focus();
-// });
-// searchCancelEl.addEventListener('click', () => {
-//   headerEl.classList.remove('searching--mobile');
-// });
+const searchTextFieldEl = document.querySelector('header .textfield');
+const searchCancelEl = document.querySelector('header .search-canceler');
+searchTextFieldEl.addEventListener('click', () => {
+  headerEl.classList.add('searching--mobile');
+  searchInputEl.focus();
+});
+searchCancelEl.addEventListener('click', () => {
+  headerEl.classList.remove('searching--mobile');
+});
 
-// // 화면 크기가 달라졌을 때 검색 모드가 종료되도록 처리.
-// window.addEventListener('resize', event => {
-//   if (window.innerWidth <= 740) {
-//     headerEl.classList.remove('searching');
-//   } else {
-//     headerEl.classList.remove('searching--mobile');
-//   }
-// });
+// 화면 크기가 달라졌을 때 검색 모드가 종료되도록 처리.
+window.addEventListener('resize', event => {
+  if (window.innerWidth <= 740) {
+    headerEl.classList.remove('searching');
+  } else {
+    headerEl.classList.remove('searching--mobile');
+  }
+});
 
 // 네비게이션 메뉴 토글! [모바일]
 // const navEl = document.querySelector('nav');

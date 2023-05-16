@@ -580,11 +580,11 @@ header.searching .search .autocompletes li {
   transform: translate(0, 0);
 }
 
-/* @media (max-width: 1000px) {
+@media (max-width: 1000px) {
   header .inner {
     padding: 0 10px;
   }
-} */
+}
 @media (max-width: 740px) {
   /* Header 전체 배경 */
   header::before {
@@ -897,7 +897,7 @@ nav .menu li.active:hover a {
 
 /* Main wrapper */
 main {
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 /* Hero */
