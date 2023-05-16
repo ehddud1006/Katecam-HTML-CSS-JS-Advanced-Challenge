@@ -797,7 +797,7 @@ nav .menu li:hover a {
 nav .menu li.active:hover a {
   color: var(--color-font);
 }
-/* 
+
 @media (max-width: 740px) {
   nav .shadow {
     position: fixed;
@@ -893,7 +893,7 @@ nav .menu li.active:hover a {
   nav.menuing .menu-toggler::after {
     transform: rotate(40deg);
   }
-} */
+}
 
 /* Main wrapper */
 main {
