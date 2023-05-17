@@ -2462,7 +2462,7 @@ footer .legal ul li:hover a {
   text-decoration: underline;
 }
 
-/* @media (max-width: 1000px) {
+@media (max-width: 1000px) {
   footer .inner {
     max-width: none;
   }
@@ -2474,9 +2474,9 @@ footer .legal ul li:hover a {
   footer .legal .locale {
     margin-top: 14px;
   }
-} */
+}
 
-/* @media (max-width: 740px) {
+@media (max-width: 740px) {
   footer .buy-info {
     flex-wrap: wrap;
   }
@@ -2523,7 +2523,7 @@ footer .legal ul li:hover a {
     display: block;
     padding: 6px 12px;
   }
-  Active accordion menu
+  /* Active accordion menu */
   footer .navigations .map.active ul {
     height: auto;
     overflow: visible;
@@ -2538,7 +2538,7 @@ footer .legal ul li:hover a {
     flex-wrap: wrap;
     gap: 6px 21px;
   }
-} */
+}
 
 @keyframes sprite-icon {
   /* 1~10 */
