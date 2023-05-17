@@ -960,7 +960,7 @@ main {
 .hero .links {
   margin-top: 30px;
 }
-/* 
+
 @media (max-width: 1000px) {
   .hero .inner {
     padding-bottom: 80px;
@@ -993,8 +993,8 @@ main {
     width: 515px;
     height: 95px;
   }
-} */
-/* 
+}
+
 @media (max-width: 740px) {
   .hero .inner {
     padding-top: 40px;
@@ -1038,7 +1038,7 @@ main {
     width: auto;
     font-size: 17px;
   }
-} */
+}
 
 /* Power */
 .power {
