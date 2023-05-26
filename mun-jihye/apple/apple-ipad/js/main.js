@@ -241,3 +241,11 @@ navigations.forEach(function(nav){
 const thisYearEl = document.querySelector('span.this-year')
 thisYearEl.textContent = new Data().getFullYear()
 
+// 푸터 내비게이션 맵 아코디언
+const mapEls = [...document.querySelectorAll('footer .navigations .map')]
+mapEls.forEach(el => {
+  const h3El = el.querySelector('h3')
+  h3El.addEventListener('click', () => {
+    el.classList.toggle('active')
+  })
+})
