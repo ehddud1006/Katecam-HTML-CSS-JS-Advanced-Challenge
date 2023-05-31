@@ -1,5 +1,6 @@
 import { Component } from '../core/heropy';
 import movieStore from '../store/movie';
+import MovieItem from './MovieItem';
 
 export default class MovieList extends Component {
   constructor() {
@@ -14,6 +15,6 @@ export default class MovieList extends Component {
     `;
 
     const moviesEl = this.el.querySelector('.movies');
-    moviesEl.append(Object.values(movieStore.state.movies).map(movie => movie.Title));
+    moviesEl.append(...movieStore.state.movies.map(movie => new MovieItem({ movie }).el));
   }
 }
