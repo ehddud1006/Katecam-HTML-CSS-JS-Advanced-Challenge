@@ -49,6 +49,7 @@ export function createRouter(routes) {
     window.addEventListener('popstate', () => {
       routeRender(routes);
     });
+    // 최초 호출
     routeRender(routes);
   };
 }
