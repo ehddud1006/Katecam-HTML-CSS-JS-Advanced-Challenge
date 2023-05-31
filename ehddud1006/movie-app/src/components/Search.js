@@ -8,7 +8,7 @@ export default class Search extends Component {
     // input 요소의 value 속성에 기존 검색어를 할당해야 합니다!
     this.el.innerHTML = /* html */ `
       <input 
-        value="${movieStore.state.searchText}}"
+        value="${movieStore.state.searchText}"
         placeholder="Enter the movie title to search!" />
       <button class="btn btn-primary">
         Search!
