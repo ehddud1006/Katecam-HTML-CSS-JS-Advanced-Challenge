@@ -1,0 +1,27 @@
+import { Component } from "../core/heropy";
+import movieStore, {searchMovies} from "../store/movie"
+
+export default class MovieListMore extends Component{
+  constructor(){
+      super({
+          tagName: 'button'
+      })
+      movieStore.subscribe('pageMax', ()=>{
+          // movieStore.state.page
+          // movieStore.state.pageMax
+          // 이렇게 같은 movieStore.state에서 꺼내오는 것은 객체 구조분해 할당 사용 
+          const {page, pageMax} = movieStore.state
+          pageMax > page 
+            ? this.el.classList.remove('hide')
+            : this.el.classList.add('hide')
+      })
+  }
+  render(){
+      this.el.classList.add('btn','view-more','hide')
+      this.el.textContent = "View more.."
+
+      this.el.addEventListener('click', async ()=> {
+          await searchMovies(movieStore.state.page + 1)
+      })
+  }
+}
