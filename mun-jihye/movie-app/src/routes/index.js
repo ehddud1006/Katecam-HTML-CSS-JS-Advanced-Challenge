@@ -1,8 +1,8 @@
 import { createRouter } from '../core/heropy'
 import Home from './Home'
-import About from './About'
+import Movie from './Movie'
 
 export default createRouter([
     {path:'#/', component:Home },
-    {path:'#/', component:About }
+    {path:'#/movie', component:Movie }
 ])
