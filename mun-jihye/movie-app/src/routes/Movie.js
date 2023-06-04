@@ -1,10 +1,11 @@
-import { Component } from "../core/heropy";
-import movieStore, {getMovieDetails} from "../store/movie"
+import { Component } from '../core/heropy'
+import movieStore, { getMovieDetails } from '../store/movie'
 
 export default class Movie extends Component {
-  async render(){
+  async render() {
     this.el.classList.add('container', 'the-movie')
-    this.el.innerHTML = /*html*/ `
+    // 스켈레톤 UI 출력!
+    this.el.innerHTML = /* html */ `
       <div class="poster skeleton"></div>
       <div class="specs">
         <div class="title skeleton"></div>
@@ -12,16 +13,18 @@ export default class Movie extends Component {
         <div class="plot skeleton"></div>
       </div>
     `
-    await getMovieDetails(history.state.id)  // 영화 상세 정보를 가져옴 
-    console.log(movieStore.state.movie)
+    // 영화 상세 정보 가져오기!
+    await getMovieDetails(history.state.id)
     const { movie } = movieStore.state
-    const bigPoster = movie.Poster.replace('SX300','SX700')
+    const bigPoster = movie.Poster.replace('SX300', 'SX700')
 
-    this.el.innerHTML=/*HTML */`
-      <div 
-      style = "background-image:url(${bigPoster})" 
-      class='poster'></div>
-      <div class = "specs" >
+    // this.el.classList.add('container', 'the-movie')
+    this.el.innerHTML = /* html */ `
+      <div
+        style="background-image: url(${bigPoster});"
+        class="poster">
+      </div>
+      <div class="specs">
         <div class="title">
           ${movie.Title}
         </div>
@@ -37,10 +40,9 @@ export default class Movie extends Component {
         </div>
         <div>
           <h3>Ratings</h3>
-          <!-- 결과적으로 문자데이터를 출력하게 됌 -->
           ${movie.Ratings.map(rating => {
             return `<p>${rating.Source} - ${rating.Value}</p>`
-          }).join('')} 
+          }).join('')}
         </div>
         <div>
           <h3>Actors</h3>

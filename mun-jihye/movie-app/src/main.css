@@ -23,7 +23,16 @@ body{
   margin: 0 auto;
   padding: 40px 0;
 }
-
+@media (max-width: 1200px) {
+  .container{
+    padding: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .container{
+    padding: 40px 20px;
+  }
+}
 .btn{
   height: 50px;
   padding: 0 20px;
@@ -144,7 +153,17 @@ header .user:hover{
 header .user img{
   width: 100%;
 } 
-
+@media (max-width:600px) {
+  header{
+    padding: 14px 20px;
+  }  
+  header nav{
+    display: none;
+  }
+  header .user{
+    right: 20px;
+  }
+}
 
 footer{
   padding: 40px 40px 60px;
@@ -157,6 +176,8 @@ footer a{
 footer a:hover{
   text-decoration: underline;
 }
+
+
 
 .headline{
   margin-bottom: 40px;
@@ -173,6 +194,12 @@ footer a:hover{
 .headline p{
   color: var(--color-white);
 }
+@media (max-width:600px) {
+  .headline h1{
+    font-size: 60px;
+  }
+}
+
 
 .search{
   display: flex;
@@ -312,4 +339,53 @@ footer a:hover{
   font-family: "Oswald", sans-serif;
   color: var(--color-white);
   margin: 24px 0 6px;
+}
+@media (max-width:1200px) {
+  .the-moive{
+    gap: 30px;
+  }
+  .the-moive .poster{
+    --width: 300px;
+  }
+}
+@media (max-width:720px) {
+  .the-moive{
+    display: block;
+  }
+  .the-moive .title{
+    font-size: 50px;
+    margin-top: 50px;
+  }
+}
+
+.about .photo{
+  width: 230px;
+  height: 230px;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  background-size: cover;
+}
+.about .name{
+  font-size: 40px;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 20px;
+}
+.about p{
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 4px;
+}
+.about a{
+  color: var(--color-primary);
+  text-decoration: none;
+}
+.about a:hover{
+  text-decoration: underline;
+}
+
+.not-found h1{
+  font-size: 70px;
+  font-weight: 700;
+  color: var(--color-white-10);
+  text-align: center;
 }
