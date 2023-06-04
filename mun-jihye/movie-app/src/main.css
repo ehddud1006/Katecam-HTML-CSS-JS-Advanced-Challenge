@@ -146,6 +146,17 @@ header .user img{
 } 
 
 
+footer{
+  padding: 40px 40px 60px;
+  text-align: center;
+}
+footer a{
+  text-decoration: none;
+  color: var(--color-white-20);
+}
+footer a:hover{
+  text-decoration: underline;
+}
 
 .headline{
   margin-bottom: 40px;
