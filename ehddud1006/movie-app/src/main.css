@@ -12,20 +12,27 @@ html {
 }
 
 body {
-  background-color: var(--color-black);
   font-family: 'Roboto', sans-serif;
+  background-color: var(--color-black);
   line-height: 1.4;
   color: var(--color-white);
 }
 
-/* Container */
 .container {
   max-width: 1120px;
   margin: 0 auto;
   padding: 40px 0;
 }
-
-/* Button */
+@media (max-width: 1200px) {
+  .container {
+    padding: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 40px 20px;
+  }
+}
 .btn {
   height: 50px;
   padding: 0 20px;
@@ -37,7 +44,7 @@ body {
   color: var(--color-white);
   background-color: var(--color-area);
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.3;
 }
 .btn:hover {
   background-color: var(--color-hover);
@@ -51,7 +58,6 @@ body {
   color: var(--color-white);
 }
 
-/* Default Loading Animation */
 .the-loader {
   width: 30px;
   height: 30px;
@@ -73,7 +79,32 @@ body {
   }
 }
 
-/* components/TheHeader */
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: var(--color-area);
+}
+.skeleton::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(270deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  transform: translateX(-100%);
+  animation: skeleton-loader 2s infinite;
+}
+@keyframes skeleton-loader {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 header {
   padding: 20px 40px;
   background-color: rgba(14, 17, 27, 0.9);
@@ -85,8 +116,8 @@ header {
   gap: 40px;
 }
 header .logo {
-  font-family: 'Oswald', sans-serif;
   font-size: 20px;
+  font-family: 'Oswald', sans-serif;
   color: var(--color-white-50);
   text-decoration: none;
 }
@@ -109,7 +140,7 @@ header nav ul li a.active {
 header .user {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 50px;
   background-color: var(--color-area);
   cursor: pointer;
   position: absolute;
@@ -125,21 +156,30 @@ header .user:hover {
 header .user img {
   width: 100%;
 }
+@media (max-width: 600px) {
+  header {
+    padding: 14px 20px;
+  }
+  header nav {
+    display: none;
+  }
+  header .user {
+    right: 20px;
+  }
+}
 
-/* components/TheFooter */
 footer {
   padding: 40px 40px 60px;
   text-align: center;
 }
 footer a {
-  color: var(--color-white-20);
   text-decoration: none;
+  color: var(--color-white-20);
 }
 footer a:hover {
   text-decoration: underline;
 }
 
-/* components/Headline */
 .headline {
   margin-bottom: 40px;
 }
@@ -153,10 +193,14 @@ footer a:hover {
   color: var(--color-primary);
 }
 .headline p {
-  color: var(--color-white-30);
+  color: var(--color-white);
+}
+@media (max-width: 600px) {
+  .headline h1 {
+    font-size: 60px;
+  }
 }
 
-/* components/Search */
 .search {
   display: flex;
   gap: 10px;
@@ -181,7 +225,6 @@ footer a:hover {
   max-width: 150px;
 }
 
-/* components/MovieList */
 .movie-list {
   padding: 20px;
   border-radius: 4px;
@@ -199,7 +242,6 @@ footer a:hover {
   gap: 20px;
 }
 
-/* components/MovieItem */
 .movies .movie {
   --width: 200px;
   width: var(--width);
@@ -215,13 +257,11 @@ footer a:hover {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
   right: 0;
+  left: 0;
   border: 6px solid var(--color-primary);
 }
 .movies .movie .info {
-  background-color: rgba(14, 17, 27, 0.3);
-  backdrop-filter: blur(10px);
   width: 100%;
   padding: 14px;
   box-sizing: border-box;
@@ -230,6 +270,8 @@ footer a:hover {
   position: absolute;
   left: 0;
   bottom: 0;
+  background-color: rgba(14, 17, 27, 0.3);
+  backdrop-filter: blur(10px);
 }
 .movies .movie .info .year {
   color: var(--color-primary);
@@ -238,7 +280,6 @@ footer a:hover {
   color: var(--color-white);
 }
 
-/* components/MovieListMore */
 .view-more {
   width: 100%;
   max-width: 300px;
@@ -249,7 +290,7 @@ footer a:hover {
   display: none;
 }
 
-/* routes/Movie */
+/* 영화의 상세 정보를 보여주는 클래스 */
 .the-movie {
   color: var(--color-white-50);
   display: flex;
@@ -264,17 +305,17 @@ footer a:hover {
   background-size: cover;
   background-color: var(--color-area);
 }
-.the-movie .specs {
+.the-moive .specs {
   flex-grow: 1;
 }
-.the-movie .title {
-  font-family: 'Oswald', sans-serif;
+.the-moive .title {
   font-size: 70px;
+  font-family: 'Oswald', sans-serif;
   line-height: 1;
   color: var(--color-white);
   margin-bottom: 30px;
 }
-.the-movie .title.skeleton {
+.the-moive .title.skeleton {
   height: 70px;
 }
 .the-movie .labels {
@@ -289,36 +330,26 @@ footer a:hover {
   height: 400px;
 }
 .the-movie h3 {
-  font-family: 'Oswald', sans-serif;
   font-size: 20px;
+  font-family: 'Oswald', sans-serif;
   color: var(--color-white);
   margin: 24px 0 6px;
 }
-
-/* Skeleton Loading Animation */
-.skeleton {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  background-color: var(--color-area);
-}
-.skeleton::after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: linear-gradient(270deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  transform: translateX(-100%);
-  animation: skeleton-loader 2s infinite;
-}
-@keyframes skeleton-loader {
-  0% {
-    transform: translateX(-100%);
+@media (max-width: 1200px) {
+  .the-moive {
+    gap: 30px;
   }
-  100% {
-    transform: translateX(100%);
+  .the-moive .poster {
+    --width: 300px;
+  }
+}
+@media (max-width: 720px) {
+  .the-moive {
+    display: block;
+  }
+  .the-moive .title {
+    font-size: 50px;
+    margin-top: 50px;
   }
 }
 
