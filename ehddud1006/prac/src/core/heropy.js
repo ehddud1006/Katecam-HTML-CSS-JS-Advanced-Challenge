@@ -52,3 +52,24 @@ export function createRouter(routes) {
     routeRender(routes);
   };
 }
+
+//// Store /////////
+export class Store {
+  constructor(state) {
+    this.state = {};
+    this.observers = {};
+    for (const key in state) {
+      console.log(key);
+      Object.defineProperty(this.state, key, {
+        get: () => state[key], //state['message']
+        set: val => {
+          state[key] = val;
+          this.observers[key].forEach(observer => observer(val));
+        },
+      });
+    }
+  }
+  subscribe(key, cb) {
+    Array.isArray(this.observers[key]) ? this.observers[key].push(cb) : (this.observers[key] = [cb]);
+  }
+}
